@@ -197,17 +197,90 @@
             <div class="form">
                 <div class="top_input">
                     <input type="text" name="name" placeholder="Имя">
-                    <input type="text" name="type" placeholder="Тип сайта">
+                    <select class="select_item" size="1">
+                        <option value="" disabled selected hidden>Тип сайта</option>
+                        <option>Лендинг</option>
+                        <option>Интернет-магазин</option>
+                        <option>Корпоративный сайт</option>
+                        <option>Другой сайт</option>
+                    </select>
                 </div>
                 <div class="bot_input">
                     <input type="email" name="email" placeholder="E-mail">
-                    <input type="text" name="desc" placeholder="Кратоке описание вашего сайта">
+                    <input type="text" name="desc" placeholder="Краткое описание вашего сайта">
                 </div>
                 <button type="submit">Отправить</button>
             </div>
         </div>
     </section>
-
+    <section class="question">
+        <h2>Популярные вопросы</h2>
+        <div class="dropdown">
+            <details class="details">
+                <summary class="summary">Сколько стоит сайт-визитка?</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores commodi
+                delectus deserunt earum in maiores minima neque nobis, non possimus quam quos tenetur voluptatem!
+                Sint ullam ut vel.</p>
+            </details>
+            <details>
+                <summary class="summary">Сколько по времени занимает разработка сайта?</summary>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum distinctio eius facere illum ipsa
+                ipsam laboriosam, magnam magni maiores mollitia neque nesciunt nobis, nulla quidem quo rerum sunt
+                temporibus veritatis.
+            </details>
+            <details>
+                <summary class="summary">Могу ли я просто улучшить свой старый сайт?</summary>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid consectetur delectus
+                eligendi error, facilis incidunt inventore ipsa laudantium libero maxime neque sit vel! Cum dicta
+                facere ipsa voluptatem voluptatum!
+            </details>
+            <details>
+                <summary class="summary">Сколько стоит продвижение сайта?</summary>
+                Продвижение сайта - это вещь, которая поднимает ваш сайт в поисковой выдаче Google, таким образом,
+                клиентам будет легче найти вас. Продвижение сайта может стоить от 300 до 1000 долларов в месяц, в
+                зависимости от размера вашего сайта.
+            </details>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer_nav">
+            <div class="footer_social">
+            <img src="./img/footer%20logo.png" alt="logo">
+                <ul class="social">
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Viber</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <h3>Услуги</h3>
+                <ul class="services_list">
+                    <li><a href="#">Разработка сайта</a></li>
+                    <li><a href="#">Разработка дизайна</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Копирайтинг</a></li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <h3>Навигация</h3>
+                <ul class="navigation_list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Этапы</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                    <li><a href="#">Контакты</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_form">
+            <input type="text" placeholder="Задать вопрос">
+            <input type="email" placeholder="E-mail">
+            <button type="submit">Отправить</button>
+        </div>
+    </section>
 </div>
 </body>
 </html>

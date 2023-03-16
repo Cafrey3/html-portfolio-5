@@ -11,7 +11,7 @@ button {
 }
 
 :root {
-    --c-ornage: #F66700;
+    --c-orange: #F66700;
 }
 
 .wrapper {
@@ -72,7 +72,7 @@ button {
 .menu_link:hover {
     transition: text-shadow 50ms;
     text-shadow: .6px 0 0 #ffffff;
-    border-bottom: 3px solid var(--c-ornage);
+    border-bottom: 3px solid var(--c-orange);
 }
 
 h1 {
@@ -102,7 +102,7 @@ h1 {
     color: #ffffff;
     font-size: 22px;
     line-height: 27px;
-    background-color: var(--c-ornage);
+    background-color: var(--c-orange);
 }
 
 .hero_button:hover {
@@ -172,7 +172,7 @@ h1 {
 }
 
 .features_item:hover {
-    background-color: var(--c-ornage);
+    background-color: var(--c-orange);
     border: 1px solid transparent;
     transition: .3s;
 }
@@ -288,12 +288,14 @@ h1 {
     width: 280px;
     height: 350px;
     position: relative;
-    /*align-items: center;*/
-    /*text-align: left;*/
+}
+
+.price_item p {
+    font-family: 'Lato', sans-serif;
 }
 
 .price span {
-    color: var(--c-ornage);
+    color: var(--c-orange);
     font-size: 15px;
     letter-spacing: 0.1em;
     font-weight: 700;
@@ -311,10 +313,10 @@ h1 {
 
 .price_btn {
     color: #FFFFFF;
-    padding: 20px 40px 20px 40px;
-    background-color: var(--c-ornage);
+    padding: 10px 40px;
+    background-color: var(--c-orange);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     bottom: 25px;
     width: 82%;
@@ -331,7 +333,7 @@ h1 {
 
 .price_item:hover {
     border: 1px solid transparent;
-    background-color: var(--c-ornage);
+    background-color: var(--c-orange);
     transition: .2s;
 }
 
@@ -361,7 +363,7 @@ h1 {
 .contacts_img {
     background-image: url("./img/contacts.png");
     width: 420px;
-    height: 350px;
+    height: 361px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -375,12 +377,14 @@ h1 {
 .form {
     padding: 80px;
     align-items: center;
+    position: relative;
 }
 
-.form input {
+.form input,
+.footer_form input {
     background-color: #23282d;
     border: none;
-    border-bottom: 2px solid var(--c-ornage);
+    border-bottom: 2px solid var(--c-orange);
     outline: none;
     color: #FFFFFF;
     font-size: 20px;
@@ -399,11 +403,162 @@ h1 {
     margin-bottom: 20px;
 }
 
-.form button {
+.form button,
+.footer_form button {
     width: 100%;
-    background-color: var(--c-ornage);
-    padding: 20px 0;
+    background-color: var(--c-orange);
+    padding: 15px 0;
     color: #FFFFFF;
     font-size: 25px;
     font-weight: 700;
+    border-radius: unset;
 }
+
+.form button:hover {
+    background-color: #de5d03;
+    transition: .2s;
+}
+
+.form button:active{
+    background-color: #b94d02;
+}
+
+.select_item {
+    border: none;
+    border-bottom: 2px solid var(--c-orange);
+    background-color: #23282D;
+    color: gray;
+    outline: none;
+    font-size: 16px;
+}
+
+.select_item option {
+    background-color: #FFFFFF;
+}
+
+.form::before,
+.form::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 380px;
+    height: 120px;
+    border: 5px solid #ffffff;
+}
+
+.form::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.form::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.question {
+    margin-top: 180px;
+}
+
+.question h2 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+details {
+    border-bottom: 4px solid var(--c-orange);
+    user-select: none;
+
+}
+
+summary {
+    margin-bottom: 15px;
+    font-weight: 16;
+    cursor: pointer;
+}
+
+.details p {
+    margin-bottom: 15px;
+}
+
+.summary {
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_nav {
+    display: flex;
+    column-gap: 80px;
+    margin-right: 50px;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer a:hover {
+    color: var(--c-orange);
+    transition: .2s;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.social, .navigation_list, .services, li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.social a {
+    text-decoration: underline;
+}
+
+.footer_form {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+}
+
+.footer_form input {
+    width: 100%;
+}
+
+.footer_form button {
+    width: 100%;
+}
+
+.footer_form input {
+    margin-bottom: 20px;
+}
+
+.footer_form button:hover {
+    background-color: #de5d03;
+    transition: .2s;
+}
+
+.footer_form button:active {
+    background-color: #b94d02;
+}
+
+
+
