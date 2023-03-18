@@ -41,7 +41,7 @@
         </header>
         <div class="description">
             <div class="hero">
-                <h1>Сайты любой сложности на заказ! </h1>
+                <h1>Сайты любой сложности<br> на заказ! </h1>
                 <p>Сделаем эффективный сайт для вашего бизнеса.<br>
                     От написания текста до привлечения людей и продвижения<br> вашего сайта.</p>
                 <button class="hero_button">Заказать сайт</button>
@@ -90,6 +90,9 @@
     </section>
     <section class="development">
         <h2 class="development_title">Этапы разработки сайта</h2>
+        <div class="development_spot"></div>
+        <div class="development_spot__two"></div>
+        <div class="development_spot__three"></div>
         <div class="development_item">
             <div class="development_logo">
                 <img src="./img/one.png" alt="one">
@@ -196,18 +199,26 @@
             <div class="contacts_img"></div>
             <div class="form">
                 <div class="top_input">
-                    <input type="text" name="name" placeholder="Имя">
-                    <select class="select_item" size="1">
-                        <option value="" disabled selected hidden>Тип сайта</option>
-                        <option>Лендинг</option>
-                        <option>Интернет-магазин</option>
-                        <option>Корпоративный сайт</option>
-                        <option>Другой сайт</option>
-                    </select>
+                    <label>
+                        <input type="text" name="name" placeholder="Имя">
+                    </label>
+                    <label>
+                        <select class="select_item" size="1">
+                            <option value="" disabled selected hidden>Тип сайта</option>
+                            <option>Лендинг</option>
+                            <option>Интернет-магазин</option>
+                            <option>Корпоративный сайт</option>
+                            <option>Другой сайт</option>
+                        </select>
+                    </label>
                 </div>
                 <div class="bot_input">
-                    <input type="email" name="email" placeholder="E-mail">
-                    <input type="text" name="desc" placeholder="Краткое описание вашего сайта">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <label>
+                        <input type="text" name="desc" placeholder="Краткое описание вашего сайта">
+                    </label>
                 </div>
                 <button type="submit">Отправить</button>
             </div>
@@ -219,8 +230,8 @@
             <details class="details">
                 <summary class="summary">Сколько стоит сайт-визитка?</summary>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores commodi
-                delectus deserunt earum in maiores minima neque nobis, non possimus quam quos tenetur voluptatem!
-                Sint ullam ut vel.</p>
+                    delectus deserunt earum in maiores minima neque nobis, non possimus quam quos tenetur voluptatem!
+                    Sint ullam ut vel.</p>
             </details>
             <details>
                 <summary class="summary">Сколько по времени занимает разработка сайта?</summary>
@@ -245,7 +256,7 @@
     <section class="footer">
         <div class="footer_nav">
             <div class="footer_social">
-            <img src="./img/footer%20logo.png" alt="logo">
+                <img src="./img/footer%20logo.png" alt="logo">
                 <ul class="social">
                     <li><a href="#">Telegram</a></li>
                     <li><a href="#">Instagram</a></li>
@@ -271,13 +282,17 @@
                     <li><a href="#">Этапы</a></li>
                     <li><a href="#">Услуги</a></li>
                     <li><a href="#">Стоимость</a></li>
-                    <li><a href="#">Контакты</a> </li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer_form">
-            <input type="text" placeholder="Задать вопрос">
-            <input type="email" placeholder="E-mail">
+            <label>
+                <input type="text" placeholder="Задать вопрос">
+            </label>
+            <label>
+                <input type="email" placeholder="E-mail">
+            </label>
             <button type="submit">Отправить</button>
         </div>
     </section>
