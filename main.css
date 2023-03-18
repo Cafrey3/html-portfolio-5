@@ -418,6 +418,19 @@ h1 {
     position: relative;
 }
 
+.form_spot {
+    background-image: url("./img/spot 4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: -300px;
+    right: -30px;
+    width: 190px;
+    height: 510px;
+}
+
 .form input,
 .footer_form input {
     background-color: #23282d;
@@ -468,6 +481,7 @@ h1 {
     color: gray;
     outline: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .select_item option {
